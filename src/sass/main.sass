@@ -1,0 +1,557 @@
+@import bootstrap.min
+@import mixins
+main 
+    background-color: #f4f7f9
+    h3
+        font-size: 36px
+        letter-spacing: 1px
+        line-height: 40px
+        color: #333333
+        font-weight: 400
+        font-family: "Rubik"
+        text-transform: uppercase
+.hamburger
+  display: flex
+  position: relative
+  overflow: hidden
+  padding: 10px
+  width: 40px
+  height: 25px
+  cursor: pointer
+  +media(900)
+    display: none
+  span
+    content: ""
+    position: absolute
+    width: 25px
+    background-color: #fff
+    border-radius: 5px
+    top: 57%
+    height: 3px
+    transition: box-shadow .25s ease-in-out
+
+    &:before, &:after
+      content: ""
+      position: absolute
+      width: 25px
+      height: 3px
+      background-color: #fff
+      border-radius: 5px
+      top: 57%
+      transition: box-shadow .25s ease-in-out
+
+    transform: translateY(-50%)
+
+    &:before
+      top: 8px
+
+    &:after
+      top: -8px
+
+  &:hover span
+    background-color: #444
+
+    &:before, &:after
+      background-color: #444
+
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7)
+
+    &:before
+      box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.7)
+
+    &:after
+      box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.7)
+p.underH3
+    margin: 0
+    padding-bottom: 20px
+    font-size: 16px
+    line-height: 22px
+    color: #555555
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+.Aboutwave
+    // +media()
+.about
+    .cta
+        margin-bottom: 20px
+.accept
+    font-size: 13px
+    line-height: 19px
+    color: #bbbbbb
+    font-weight: 400
+    font-family: "Rubik"
+.price
+    font-size: 24px
+    line-height: 44px       
+    color: #0099ff
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+.title
+    font-size: 18px
+    line-height: 26px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+
+.description
+    font-size: 13px
+    line-height: 19px
+    color: #999999
+    font-weight: 400
+    font-family: "Rubik"
+figcaption 
+    text-align: center
+.fig
+    margin: 0
+    position: relative
+    padding: 30px 35px 50px 23px
+    &:hover
+        filter: drop-shadow(0px 4px 10.5px rgba(3,20,31,0.05))
+        background-color: #ffffff
+        transition: 0.8s ease all
+.star-1:after
+    position: absolute
+    content: ""
+    background-image: url(../img/star.png)
+    width: 60px
+    height: 60px
+    z-index: 1
+  
+.details
+    position: relative
+    p
+        padding-top: 20px
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 12px
+        letter-spacing: 0px
+        color: #0099ff
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: center
+        cursor: pointer
+        &:hover
+            text-decoration: underline
+.det:before
+    position: absolute
+    content: ""
+    background-image: url(../img/detail.png)
+    width: 11px
+    height: 12px
+    background-repeat: no-repeat
+    top: 22px
+    right: 50px
+.Island
+    display: flex
+    padding:0
+    flex-direction: column
+    align-items: center
+    text-align: center
+    max-width:120px
+    +media(1200)
+        text-align: inherit
+        flex-direction: inherit
+        align-items: inherit
+    +media(440)
+        max-width: inherit
+.Island 
+    img
+        width: 280px
+        +media(450)
+            width:100%
+hr
+    margin: 70px 0
+h4
+    font-size: 36px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+p.Mekka
+    font-size: 16px
+    line-height: 24px
+    color: #333333
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+    margin: 0
+    padding: 0 0 40px 0
+.card-gray
+    padding: 40px 55px
+    background-color: #edf2f5
+
+.wave
+    background-image: url(../img/waves1.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+.wave
+    padding-top: 90px
+.gap
+    display: flex
+    justify-content: space-between
+    column-gap: 130px
+    padding-bottom: 0px
+    flex-direction: column
+    align-items: center
+    +media(1430)
+        padding-bottom: 100px
+        flex-direction: inherit
+        align-items: inherit
+h5
+    margin: 0
+    padding-bottom: 30px
+    font-size: 56px
+    letter-spacing: 2px
+    line-height: 66px
+    color: #ffffff
+    font-weight: 400
+    font-family: "Rubik"
+.wave 
+    h5
+        i
+            font-style: normal
+            color: #0099ff
+p.underH5
+    margin: 0
+    font-size: 16px
+    line-height: 24px
+    padding-bottom: 30px
+    color: #ffffff
+    font-weight: 400
+    font-family: "PT Sans"
+   
+.client
+    display: inline-block
+    text-align: center
+    position: relative
+.cl-aft:after
+    position: absolute
+    content: ""
+    width: 180px
+    height: 262px
+    border-bottom: 5px solid #5d6871
+    border-left: 5px solid #5d6871
+    border-top: 5px solid #5d6871
+    top: 15px
+    left: -10px
+    display: none
+    +media(700)
+        left: -50px
+    +media(530)
+        display: flex
+
+.cl-bef:before
+    position: absolute
+    content: ""
+    width: 180px
+    height: 262px
+    border-right: 5px solid #5d6871
+    border-top: 5px solid #5d6871
+    border-bottom: 5px solid #5d6871
+    top: 15px
+    right: -10px
+    display: none
+    +media(700)
+        right: -50px
+    +media(530)
+        display: flex
+// .cl-top:after
+//     position: absolute
+//     content: ""
+//     width: 180px
+//     height: 262px
+//     border-bottom: 5px solid #5d6871
+//     top: 15px
+//     right: -15px
+p.ads
+    font-size: 16px
+    line-height: 25px
+    color: #ffffff
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+    text-align: left
+    padding-top: 20px
+.dodatkova
+    p.name
+        position: relative
+        text-align: center
+        font-size: 18px
+        padding: 0
+        line-height: 26px
+        color: #ffffff
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: center
+        margin: 0
+p.who 
+    padding: 0
+    margin: 0
+    font-size: 14px
+    line-height: 19px
+    color: #999999
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+.special-propose
+    padding-top: 72px
+    font-size: 36px
+    line-height: 42px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+p.underT
+    margin: 0
+    padding-bottom: 35px
+    font-size: 16px
+    line-height: 24px
+    color: #333333
+    font-weight: 400
+    font-style: italic
+    font-family: "Rubik"
+    text-align: center 
+.title-spec  
+    padding: 0 15px
+    text-align: left 
+    font-size: 18px
+    padding-top: 15px
+    line-height: 26px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+p.descript
+    text-align: left
+.description-spec 
+    padding: 0 15px
+    text-align: left
+    margin: 0
+    font-size: 13px
+    line-height: 19px
+    color: #999999
+    font-weight: 400
+    font-family: "Rubik"
+.price-spec 
+    padding: 0 15px
+    text-align: left
+    font-size: 24px
+    line-height: 44px
+    color: #0099ff
+    font-weight: 400
+    font-family: "Rubik"
+a.but-spec
+    position: relative
+    font-size: 13px
+    padding-left: 0px
+    letter-spacing: 1px
+    line-height: 40px
+    color: #ffb700
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    padding-right: 20px
+.order:after
+    position: absolute
+    content: ""
+    background-image: url(../img/order.png)
+    background-repeat: no-repeat
+    width: 12px
+    height: 12px
+    z-index: 10
+    top: 15px
+    right: 3px
+.spec-fig
+    &:hover
+        filter: drop-shadow(0px 4px 10.5px rgba(3,20,31,0.05))
+        background-color: #ffffff
+        z-index: 1
+        transition: 0.4s ease-in all
+.star:after
+    top: 0
+    left: 0px
+    position: absolute
+    content: ""
+    background-image: url(../img/star.png)
+    width: 60px
+    height: 60px
+    z-index: 20
+    &:hover
+        z-index: 50
+.spec-fig 
+    position: relative
+.forznak
+    position: relative
+.znak:after
+    position: absolute
+    content:""
+    background-image: url(../img/znak.png)
+    width: 60px
+    height: 219px
+    z-index: 10
+    display: none
+    &:hover
+        z-index: 10
+    +media(1350)
+        display: flex
+.dodatkova
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    align-items: center
+    +media(1200)
+        flex-direction: inherit
+        align-items: inherit
+.dodatkova
+    .figure:first-child
+        max-width: 200px
+.dodatkova 
+    figure
+        padding: 20px 15px
+        &:hover
+            transform: scale(1.05)
+            transition: 1s ease all
+h6
+    font-size: 36px
+    letter-spacing: 1px
+    line-height: 40px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    text-transform: uppercase
+.grafic
+    background-image: url(../img/eat.png)
+    background-repeat: no-repeat
+    background-position: center
+figure.spec-fig
+    figcaption
+        picture
+            img
+                width: 100%
+.second
+    figure:first-child
+        background-image: url(../img/eat.png)
+        background-repeat: no-repeat
+        background-size: cover
+.first
+    figure:first-child
+        background-image: url(../img/eat.png)
+        background-repeat: no-repeat
+        background-size: cover
+.pt
+    padding-top: 50px
+.first,.second
+    display: contents
+    padding: 0 30px 
+p.button
+    font-size: 12px
+    letter-spacing: 0px
+    line-height: 110px
+    color: #ffb700
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+    display: inline
+    padding: 6px 30px
+.button
+    border-radius: 16px
+    background-color: rgba(255,183,0,0)
+    border: 2px solid #ffb700      
+.consult
+    display: flex
+    justify-content: flex-end
+.faq
+    font-size: 18px
+    letter-spacing: 1px
+    line-height: 26px
+    color: #333333
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center      
+p.coment
+    font-size: 13px
+    padding-top: 30px
+    line-height: 16px
+    color: #999999
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center    
+p.num
+    position: relative
+    a
+        text-decoration: none
+        font-size: 18px
+        line-height: 26px
+        color: #0099ff
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: center
+p.name-o
+    font-size: 18px
+    line-height: 26px
+    color: #ffffff
+    font-weight: 400
+    font-family: "Rubik"
+    text-align: center
+.tel:before
+    position: absolute
+    content: ""
+    width: 16px
+    height: 17px
+    background-image: url(../img/tel.png)
+    top: 4px
+    left: -15px
+
+// .ann:after
+//     position: absolute
+//     content: ""
+//     width: 50px
+//     background-image: url(../img/anna_before.png)  
+//     height: 270px
+//     top: -165px
+//     left: -45px
+//     background-repeat: no-repeat
+// .ann:before
+//     position: absolute
+//     content: ""
+//     width: 50px
+//     background-image: url(../img/right-name.png)  
+//     height: 270px
+//     top: -165px
+//     right: -45px
+//     background-repeat: no-repeat
+.d-fig
+    display: flex
+    column-gap: 50px
+    justify-content: center
+.tal
+    text-align-last: left
+p.detTitle
+    padding: 0
+    text-align: initial
+    padding-left: 30px
+
+    font-size: 18px
+    line-height: 24px
+    color: #ffffff
+    font-weight: 400
+    font-family: "Rubik"
+p.size
+    font-size: 13px
+    line-height: 19px
+    color: #bbbbbb
+    font-weight: 400
+    font-family: "Rubik"
+p.descript
+    margin: 0
+    font-size: 13px
+    line-height: 19px
+    color: #fefefe
+    font-weight: 400
+    font-family: "Rubik"
+p.button
+    cursor: pointer
+    &:hover
+        text-decoration: underline

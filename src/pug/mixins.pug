@@ -1,0 +1,35 @@
+mixin card-top (item) 
+   figure.fig
+      figcaption 
+         picture.cardtop 
+            source(srcset=item.src + ".png" type="image/png") 
+            img(src=item.src + ".png" alt=item.alt) 
+         p.title= item.title
+         h4.price= item.price + " грн*"
+         p.text.description= item.description
+
+
+mixin spec-propose (item)
+    figure.spec-fig
+        figcaption.spec-fig.star
+            picture
+                source(srcset=item.src + ".png" type="image/png") 
+                img(src=item.src + ".png" alt=item.alt)
+            p.title-spec= item.title 
+            p.description-spec= item.description 
+            .d-flex.justify-content-between.pt
+                p.price-spec= item.price
+                a.but-spec.order(href="#")= item.but 
+
+mixin info (item)
+    figure
+        figcaption
+            .d-fig.d-flex.gap-4
+                picture
+                    source(srcset=item.src + ".png" type="image/png") 
+                    img.w100(src=item.src + ".png" alt=item.alt)
+                p.detTitle= item.detTitle
+            p.size= item.size
+            .tal
+                p.descript= item.descrip
+                p.button= item.button
