@@ -150,18 +150,15 @@ figcaption
     flex-direction: column
     align-items: center
     text-align: center
-    max-width:120px
     +media(1200)
         text-align: inherit
         flex-direction: inherit
         align-items: inherit
-    +media(440)
-        max-width: inherit
 .Island 
     img
-        width: 280px
-        +media(450)
-            width:100%
+        max-width: 280px
+        +media(440)
+            max-width: 450px
 hr
     margin: 70px 0
 h4
@@ -528,6 +525,20 @@ p.name-o
     justify-content: center
 .tal
     text-align-last: left
+.ok 
+    display: block
+    +media(440)
+        display: flex
+    a.forbut.btn.rounded-pill.me-3.cta
+    a.forbut.btn.rounded-pill.cta
+        display: flex
+        margin-bottom: 20px
+    +media(600) 
+        a.forbut.btn.rounded-pill.me-3.cta
+        a.forbut.btn.rounded-pill.cta
+            display: flex
+            margin: 20px 0
+
 p.detTitle
     padding: 0
     text-align: initial
