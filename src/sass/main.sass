@@ -16,7 +16,7 @@ main
   overflow: hidden
   padding: 10px
   width: 40px
-  height: 25px
+  height: 57px
   cursor: pointer
   +media(900)
     display: none
@@ -143,13 +143,15 @@ figcaption
     height: 12px
     background-repeat: no-repeat
     top: 22px
-    right: 50px
+    right: 55px
 .Island
     display: flex
     padding:0
     flex-direction: column
     align-items: center
-    text-align: center
+    text-align: left
+    +media(450)
+        text-align: center
     +media(1200)
         text-align: inherit
         flex-direction: inherit
@@ -178,7 +180,8 @@ p.Mekka
 .card-gray
     padding: 40px 55px
     background-color: #edf2f5
-
+.d-flex.justify-content-between.pt
+    padding-right: 15px
 .wave
     background-image: url(../img/waves1.png)
     background-repeat: no-repeat
@@ -334,11 +337,14 @@ p.descript
 .price-spec 
     padding: 0 15px
     text-align: left
-    font-size: 24px
+    font-size: 18px
     line-height: 44px
     color: #0099ff
     font-weight: 400
     font-family: "Rubik"
+    +media(1150)
+        font-size: 24px
+
 a.but-spec
     position: relative
     font-size: 13px
@@ -394,13 +400,14 @@ a.but-spec
     +media(1350)
         display: flex
 .dodatkova
-    display: flex
-    justify-content: space-around
-    flex-direction: column
-    align-items: center
-    +media(1200)
-        flex-direction: inherit
-        align-items: inherit
+    column-gap: 50px
+    // display: flex
+    // justify-content: space-around
+    // flex-direction: column
+    // align-items: center
+    // +media(1200)
+    //     flex-direction: inherit
+    //     align-items: inherit
 .dodatkova
     .figure:first-child
         max-width: 200px
