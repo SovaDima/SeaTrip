@@ -7,26 +7,27 @@
     margin: 0  auto
     padding: 50px 20px
 header
-  background-image: url(../img/header.png)
+  background-image: url(../img/header.jpg)
   background-size: cover
   background-position: center
 
 nav
     a
-        text-decoration: none
-        font-size: 14px
-        letter-spacing: 1px
-        color: #ffff
-        font-weight: 400
-        font-family: "Rubik"
-        text-align: right
-        text-transform: uppercase
-        &:hover
+      text-decoration: none
+      font-size: 14px
+      letter-spacing: 1px
+      color: #ffff
+      font-weight: 400
+      font-family: "Rubik"
+      text-align: right
+      text-transform: uppercase
+      // padding: 10px 25px
+      &:hover
             color: #ffb700
             transition: 0.3s ease-in all
     li
-        list-style: none
-        padding:  0 25px
+      padding: 10px 25px
+      list-style: none
     +media(900)
         display: flex
 .head
@@ -155,15 +156,15 @@ h2.take
     display: inline-block
     &:hover
         transform: scale(1.1)
-a.arrow
-    display: inline-block
-    width: 1.2rem
-    height: 1.2rem
-    border-left: 4px solid #000
-    border-bottom: 4px solid #000
-    transform: rotate(-45deg)
-    top: 0
-a.arrow
+// .arrow
+//     display: inline-block
+//     width: 1.2rem
+//     height: 1.2rem
+//     border-left: 4px solid #000
+//     border-bottom: 4px solid #000
+//     transform: rotate(-45deg)
+//     top: 0
+.arrow
     display: flex
     width: 1.2rem
     height: 1.2rem
@@ -179,7 +180,7 @@ nav.media
     display: block
 .hamburger
   position: absolute
-  right: 50px
+  right: 20px
   padding: 10px
   width: 50px
   height: 50px
@@ -198,6 +199,7 @@ nav.media
   background-color: beige
   border-radius: 5px
   top: 50%
+  left: 0
   transition: box-shadow .25s ease-in-out
 
 .hamburger span
@@ -212,7 +214,7 @@ nav.media
 .hamburger-open span,
 .hamburger-open span:before,
 .hamburger-open span:after
-  background-color: #444
+  background-color: #fff
 
 .hamburger-open span
   animation: fade .1s linear .6s forwards
@@ -282,6 +284,8 @@ nav
 nav 
   ul 
     padding: 0
+    margin: 0
+    list-style: none
 .menu 
   display: none
   position: absolute
@@ -290,7 +294,7 @@ nav
   margin: 0
   padding-left: 0
   list-style: none
-  background-color: lightgreen
+  background-color: orange
   border-radius: 5px
   overflow: hidden
 
