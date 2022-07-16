@@ -10,57 +10,6 @@ main
         font-weight: 400
         font-family: "Rubik"
         text-transform: uppercase
-.hamburger
-  display: flex
-  position: relative
-  overflow: hidden
-  padding: 10px
-  width: 40px
-  height: 57px
-  cursor: pointer
-  +media(900)
-    display: none
-  span
-    content: ""
-    position: absolute
-    width: 25px
-    background-color: #fff
-    border-radius: 5px
-    top: 57%
-    height: 3px
-    transition: box-shadow .25s ease-in-out
-
-    &:before, &:after
-      content: ""
-      position: absolute
-      width: 25px
-      height: 3px
-      background-color: #fff
-      border-radius: 5px
-      top: 57%
-      transition: box-shadow .25s ease-in-out
-
-    transform: translateY(-50%)
-
-    &:before
-      top: 8px
-
-    &:after
-      top: -8px
-
-  &:hover span
-    background-color: #444
-
-    &:before, &:after
-      background-color: #444
-
-    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7)
-
-    &:before
-      box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.7)
-
-    &:after
-      box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.7)
 p.underH3
     margin: 0
     padding-bottom: 20px
@@ -95,6 +44,7 @@ p.underH3
     font-weight: 400
     font-family: "Rubik"
     text-align: center
+    margin-top: 20px
 
 .description
     font-size: 13px
@@ -119,10 +69,16 @@ figcaption
     width: 60px
     height: 60px
     z-index: 1
-  
+picture.pic img 
+    width: 100%
+
 .details
     position: relative
+    margin: 0
+    +media(1200)
+        margin-left: 390px
     p
+        position: relative
         padding-top: 20px
         text-decoration: none
         text-transform: uppercase
@@ -142,8 +98,8 @@ figcaption
     width: 11px
     height: 12px
     background-repeat: no-repeat
-    top: 22px
-    right: 55px
+    top: 23px
+    right: -17px
 .Island
     display: flex
     padding:0
@@ -156,18 +112,20 @@ figcaption
         text-align: inherit
         flex-direction: inherit
         align-items: inherit
-.Island 
-    img
-        max-width: 280px
-        +media(440)
-            max-width: 450px
+// .Island 
+//     img
+//         max-width: 280px
+//         +media(440)
+//             max-width: 450px
 hr
     margin: 70px 0
 h4
-    font-size: 36px
+    font-size: 24px
     color: #333333
     font-weight: 400
     font-family: "Rubik"
+    +media(400)
+        font-size: 36px
 p.Mekka
     font-size: 16px
     line-height: 24px
@@ -346,6 +304,7 @@ p.descript
         font-size: 24px
 
 a.but-spec
+    padding-top: 1px
     position: relative
     font-size: 13px
     padding-left: 0px
@@ -364,7 +323,7 @@ a.but-spec
     width: 12px
     height: 12px
     z-index: 10
-    top: 15px
+    top: 17px
     right: 3px
 .spec-fig
     &:hover
@@ -400,8 +359,12 @@ a.but-spec
     +media(1350)
         display: flex
 .dodatkova
-    column-gap: 50px
+    column-gap: 111px
+    row-gap: 50px
+    +media(1312)
+        column-gap: 50px
     // display: flex
+
     // justify-content: space-around
     // flex-direction: column
     // align-items: center
@@ -467,13 +430,18 @@ p.button
     display: flex
     justify-content: flex-end
 .faq
+    position: relative
     font-size: 18px
+    margin-left: 40px
     letter-spacing: 1px
     line-height: 26px
     color: #333333
     font-weight: 400
     font-family: "Rubik"
-    text-align: center      
+    text-align: center
+    flex: auto
+    +media(1312)
+        flex: inherit 
 p.coment
     font-size: 13px
     padding-top: 30px
@@ -506,7 +474,37 @@ p.name-o
     height: 17px
     background-image: url(../img/tel.png)
     top: 4px
-    left: -15px
+    left: 40%
+    +media(1312)
+        left: -16px
+
+.ann-bef:before
+    position: absolute
+    content: ""
+    width: 35px
+    height: 287px
+    border-right: 4px solid #ffb700
+    border-top: 4px solid #ffb700
+    border-bottom: 4px solid #ffb700
+    top: 12px
+    right: 37%
+    +media(1312)
+        width: 62px
+        right: -57px
+.ann-aft:after
+    position: absolute
+    content: ""
+    width: 35px
+    height: 287px
+    border-left: 4px solid #ffb700
+    border-top: 4px solid #ffb700
+    border-bottom: 4px solid #ffb700
+    top: 12px
+    left:37%
+    +media(1312)
+        width: 62px
+        left: -57px
+
 
 // .ann:after
 //     position: absolute
@@ -536,12 +534,12 @@ p.name-o
     display: block
     +media(440)
         display: flex
-    a.forbut.btn.rounded-pill.me-3.cta
+    a.forbut.btn.rounded-pill.me-3.cta,
     a.forbut.btn.rounded-pill.cta
         display: flex
         margin-bottom: 20px
     +media(600) 
-        a.forbut.btn.rounded-pill.me-3.cta
+        a.forbut.btn.rounded-pill.me-3.cta,
         a.forbut.btn.rounded-pill.cta
             display: flex
             margin: 20px 0

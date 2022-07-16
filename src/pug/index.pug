@@ -20,8 +20,24 @@ html(lang="uk")
                .logo.d-flex.align-items-center.justify-content-base
                   img(src="img/logo.png", alt="Логотип")
                   p.logoT trips
-               nav
-                  ul.d-flex
+               nav.menu
+                  ul
+                     li 
+                        a(href="#") ГОловна 
+                     li 
+                        a(href="#") послуги
+                     li 
+                        a(href="#about") про компанію 
+                     li 
+                        a(href="#discount") Акції
+                     li 
+                        a(href="#") Партнери
+                     li 
+                        a(href="#") відгуки
+                     li 
+                        a(href="#") Контакти
+               nav.media 
+                  ul.d-flex.dn
                      li 
                         a(href="#") ГОловна 
                      li 
@@ -52,8 +68,8 @@ html(lang="uk")
                      |план подорожі
                   p.underH2 Наша фірма -лідер на ринку у своїй сфері
                   .before
-                     a.arrow
-                     a.arrow
+                     a(href="about1").arrow
+                     a(href="about1").arrow
       include main             
       script(src="js/bootstrap.bundle.min.js")
       script(src="js/script.js")
