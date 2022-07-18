@@ -17,19 +17,21 @@ mixin spec-propose (item)
                 img(src=item.src + ".png" alt=item.alt)
             p.title-spec= item.title 
             p.description-spec= item.description 
-            .d-flex.justify-content-between.pt
+            .d-flex.justify-content-between
                 p.price-spec= item.price
                 a.but-spec.order(href="#")= item.but 
 
 mixin info (item)
     figure
         figcaption
-            .d-fig.d-flex.gap-4
+            .d-fig
                 picture
                     source(srcset=item.src + ".png" type="image/png") 
+                .d-img
                     img.w100(src=item.src + ".png" alt=item.alt)
-                p.detTitle= item.detTitle
-            p.size= item.size
+                    .d 
+                        p.detTitle= item.detTitle
+                        p.size= item.size
             .tal
                 p.descript= item.descrip
-                p.button= item.button
+                p.button.cloud= item.button

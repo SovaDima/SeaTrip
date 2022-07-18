@@ -35,51 +35,48 @@ html(lang="uk")
                             picture.pic 
                                 source(srcset="img/iland.webp", type="webp")
                                 source(srcset="img/iland.jpg", type="jpg")
-                                img(src="img/iland.png", alt="land")
-                    .column.col-12.col-lg-8.col-sm-12
-                        h4  Дивовижний безлюдний острів, який
-                            br
-                            |зводить людей з розуму
+                                img(src="img/iland.jpg", alt="land")
+                    .column.col-12.col-lg-8.col-md-12
+                        h4 Дивовижний безлюдний острів, який зводить людей з розуму
                         .row.flex
-                            .col-12.col-lg-7
+                            .col-12.col-lg-8.col-md-9
                                 p.Mekka Пхукет - курортно-туристична Мекка Таїланду.
-                                    br 
+                                     
                                     |Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на
-                                    br
                                     |них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
                                 .ok
                                     a.forbut.btn.rounded-pill.me-3.cta.text-uppercase.a.forbut(href="#") замовити тур
                                     a.forbut.btn.rounded-pill.cta.text-uppercase(href="#") детальніше
-                            .col-12.col-lg-5
+                            .col-12.col-lg-4.col-md-3
                                 .card-gray.text-center
-                                    h4.price 575 грн./день
+                                    p.price 575 грн./день
                                     p.c-999 В дану вартість входить обслуговування персоналу, вечеря і захоплюючі історії.
             .wave
                 .wrapper
                     .gap.d-flex.justify-content-between
                         .AboutWave 
                             h5 СПІЙМАЙ ХВИЛЮ 
-                                br
+                                
                                 | 
                                 i ЖИВИ ЯСКРАВО!
                                 
                             p.underH5 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш 
-                                br
+                                
                                 | стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені 
-                                br
+                                
                                 | інструктори навчать тебе вміло «піймати хвилі» та відчути себе
-                                br
+                                
                                 | справжнім сьорфером!
                             .cta
                                 a.forbut(href="#") Детальніше
                         .client.justify-content-center.cl-aft.cl-bef.cl-top.cl-bot
                             img(src="img/lapka.png", alt="")
                             p.ads Чудова туристична фірма, що повністю виправдала мої 
-                                br 
+                                 
                                 | очікування від подорожі. Я був приємно вражений екскурсіями,
-                                br
+                                
                                 | що для мене підібрали, працюють спражні професіонали своєї
-                                br
+                                
                                 | справи. 
                             p.name-o Олег Набережний
                             p.who клієнт
@@ -95,28 +92,29 @@ html(lang="uk")
                     .column.col-12.col-md-6.col-lg-3
                         .forznak.znak
                         +spec-propose(propose.VeloTour)
-                    .column.col-12.col-md-6.col-lg-3
+                    .column.col-12.col-md-6.col-lg-3 
                         +spec-propose(propose.ForIsland)
                     .column.col-12.col-md-6.col-lg-3
                         +spec-propose(propose.Surfing) 
                 hr 
-                .dodatkova.row.flex
-                    .column.col-12.col-md-6.col-lg-3.text-start
-                        h6 додаткова інформація
-                    .first
-                        .column.col-12.col-md-6.col-lg-3
-                            +info(details.Grafik)
-                    .second
-                        .column.col-12.col-md-6.col-lg-3
-                            +info(second.Eat)
-                        .faq.ann-bef.ann-aft задати питання
+                .dodatkova
+                    .row 
+                        .col-12.col-lg-3 
+                            h6 додаткова інформація
+                        .col-12.col-lg-6
+                            .row
+                                .col-12.col-sm-6.first 
+                                    +info(details.Grafik)
+                                .col-12.col-sm-6.second 
+                                    +info(second.Eat)
+                        .col-sm-6.col-12.offset-lg-0.offset-sm-3.col-lg-3.faq.ann-bef.ann-aft задати питання
                             p.coment Скажіть доброго дня
                                 |
-                                br
+                                
                                 | нашому консультанту,
-                                br
+                                
                                 |і ми з радістю відповімо
-                                br
+                                
                                 | на Ваші запитання
                             p.num.tel
                                 a(href="tel:380505698511") +38(050)5698511
