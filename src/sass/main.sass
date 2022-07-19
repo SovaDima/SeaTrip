@@ -143,7 +143,7 @@ p.Mekka
     padding: 20px 20px
     background-color: #edf2f5
 .d-flex.justify-content-between.pt
-    padding-right: 15px
+    padding: 20px 5px
 .wave
     background-image: url(../img/waves1.png)
     background-repeat: no-repeat
@@ -260,6 +260,9 @@ p.who
     font-weight: 400
     font-family: "Rubik"
     text-align: center
+// .otstup
+//     padding: 0 15px
+//     justify-content: space-between
 .special-propose
     padding-top: 72px
     font-size: 36px
@@ -300,6 +303,7 @@ p.descript
     color: #999999
     font-weight: 400
     font-family: "Rubik"
+    min-height: 58px
 .price-spec 
     padding: 0 15px
     text-align: left
@@ -322,7 +326,7 @@ a.but-spec
     font-weight: 400
     font-family: "Rubik"
     text-align: center
-    padding-right: 20px
+    padding-right: 30px
 .order:after
     position: absolute
     content: ""
@@ -332,7 +336,7 @@ a.but-spec
     height: 12px
     z-index: 10
     top: 17px
-    right: 3px
+    right: 15px
 .spec-fig
     &:hover
         filter: drop-shadow(0px 4px 10.5px rgba(3,20,31,0.05))
@@ -397,15 +401,22 @@ a.but-spec
     figcaption
         padding: 0
         max-height: 320px
-h6
-    font-size: 36px
-    letter-spacing: 1px
-    line-height: 40px
-    color: #333333
-    font-weight: 400
-    font-family: "Rubik"
-    text-transform: uppercase
-    text-align: center
+.dodatkova
+    .text-start
+        +media(992)
+            text-align: left
+    h6
+        font-size: 36px
+        letter-spacing: 1px
+        line-height: 40px
+        color: #333333
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: inherit
+        text-transform: uppercase
+        text-align: center
+        +media(992)
+            text-align: left
 figure.spec-fig
     figcaption
         picture
@@ -422,7 +433,7 @@ figure.spec-fig
         background-repeat: no-repeat
         background-size: cover
 .pt
-    padding-top: 50px
+    padding-top: 15px
 // .first,.second
 //     display: contents
 //     padding: 0 30px 
@@ -464,10 +475,8 @@ p.coment
     font-weight: 400
     font-family: "Rubik"
     text-align: center    
-p.num
-    position: relative
-    margin-bottom:10px 
-    a
+.num a
+        margin-bottom:10px 
         text-decoration: none
         font-size: 18px
         line-height: 26px
@@ -475,6 +484,8 @@ p.num
         font-weight: 400
         font-family: "Rubik"
         text-align: center
+span.num
+    position: relative
 p.name-o
     font-size: 18px
     line-height: 26px
@@ -488,8 +499,8 @@ p.name-o
     width: 16px
     height: 17px
     background-image: url(../img/tel.png)
-    top: 4px
-    left: 9%
+    top: 2px
+    left: -20px
 .ann-bef:before
     position: absolute
     content: ""

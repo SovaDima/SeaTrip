@@ -15,11 +15,12 @@ mixin spec-propose (item)
             picture
                 source(srcset=item.src + ".png" type="image/png") 
                 img(src=item.src + ".png" alt=item.alt)
-            p.title-spec= item.title 
-            p.description-spec= item.description 
-            .d-flex.justify-content-between
-                p.price-spec= item.price
-                a.but-spec.order(href="#")= item.but 
+                p.title-spec= item.title 
+                .otstup
+                    p.description-spec= item.description 
+                    .d-flex.justify-content-between.pt
+                        p.price-spec= item.price
+                        a.but-spec.order(href="#")= item.but 
 
 mixin info (item)
     figure
